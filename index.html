@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>lars tornøe_Responsive</title>
+</head>
+<style>
+  .nav-item :hover{
+    background-color: #fffdd0;
+  }
+  .container:hover .overlay {
+    opacity: 0.8;
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2%;
+  right: 0px;
+  height: 100%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fffdd0;
+}
+.text {
+          color:black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          position: absolute;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          bottom: 25px;
+          left: 100px;
+        }
+.container {
+            position: relative;
+            width: 100%;
+           }
+           .navbar-toggler{
+            float:right;
+        border: 0;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus{
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+
+    .toggler-icon{
+        width: 30px;
+        height: 3px;
+        background-color:#262626;
+        display: block;
+        transition: all 0.2s;
+    }
+    .middle-bar{
+        margin:5px auto;
+    }
+    .navbar-toggler .top-bar{
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+    .navbar-toggler .middle-bar{
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    .navbar-toggler .bottom-bar{
+        transform: rotate(-45deg);
+        transform-origin: 10% 10%;
+    }
+    .navbar-toggler.collapsed .top-bar{
+        transform: rotate(0);
+    }
+    .navbar-toggler.collapsed .middle-bar{
+       opacity: 1;
+       filter: alpha(opacity=100);
+    } 
+    .navbar-toggler.collapsed .bottom-bar{
+        transform: rotate(0);
+    }
+    .navbar-toggler.collapsed.toggler-icon{
+        background-color: #777777;
+    }
+    @media (min-width:320px) and (max-width:991px){
+.sticky-top1{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-right: 20px;
+}
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top1">
+  <div class="container-fluid">
+    <a class="navbar-brand collapsed" href="#"><img src="assects/LARS_LOGO.png" width="140px" height="20px" style="padding-left: 20px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav" style="text-align:center;">
+        <li class="nav-item p-3 m-2">
+          <a class="nav-link text-body" href="#">Work</a>
+        </li>
+        <li class="nav-item p-3 m-2">
+          <a class="nav-link text-body" href="#">About</a>
+        </li>
+        <li class="nav-item p-3 m-2">
+          <a class="nav-link text-body" href="#">News</a>
+        </li>    
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container">
+          <img src="assects/1.jpg" width="100%" height="350px">
+          <div class="overlay">
+            <div class="text">kizu</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="container">
+          <img src="assects/2.jpg" alt="" width="100%" height="350px">
+          <div class="overlay">
+            <div class="text">Hex</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container">
+          <img src="assects/3.jpg" alt="" width="100%" height="350px">
+          <div class="overlay">
+            <div class="text">Tind</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="container">
+          <img src="assects/4.jpg" alt="" width="100%" height="350px">
+          <div class="overlay">
+            <div class="text">Coil</div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="container">
+        <img src="assects/5.jpg" alt="" width="100%" height="350px">
+        <div class="overlay">
+          <div class="text">The Dots</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="container">
+        <img src="assects/6.jpg" alt="" width="100%" height="350px">
+        <div class="overlay">
+          <div class="text">Pinch</div>
+        </div>
+      </div>
+    </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/7.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Stripes</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/8.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Scoop</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/9.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Fjell</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/10.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Bloc</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/11.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Con</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/12.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Kvart</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/13.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Clover</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/14.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Undring</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/15.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Copenhagen Char</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/16.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Corner</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/17.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Clint</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/18.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Nunu</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/19.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Myk</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="container">
+      <img src="assects/20.jpg" alt="" width="100%" height="350px">
+      <div class="overlay">
+        <div class="text">Bone</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+</body>
+</html>
